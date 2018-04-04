@@ -6,7 +6,19 @@
   <link rel='stylesheet' href='https://nspirecx.github.io/multi/counter.css' crossorigin='anonymous'>
 </head>
 
-<script src="https://nspirecx.github.io/multi/counter.js"></script>
+<script>
+  var button = document.getElementById("ac"),
+
+  count = 0;
+
+button.onclick = function() {
+
+  count += 1;
+
+  button.innerHTML = "Talies: " + count;
+
+};
+</script>
 
 <body>
   <div class="main">
