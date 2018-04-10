@@ -187,12 +187,7 @@ function changeBackground() {
   if (currentValue != "420") {
     $(document.body).removeClass('background-420');
   }
-    if (currentValue === "666") {
-    console.log('666 666 666 666 666 666')
-    $(document.body).addClass('background-666');
-  }
-  if (currentValue != "666") {
-    $(document.body).removeClass('background-666');
+    
   }
     if (currentValue === "1999") {
     console.log("Two thousand zero zero party over, oops, out of time")
