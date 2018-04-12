@@ -36,3 +36,15 @@
 <p align="center"><font face="arial" size="-2">This free script provided by</font><br>
 <font face="arial, helvetica" size="-2"><a href="http://javascriptkit.com">JavaScript
 Kit</a></font></p> 
+
+  <input id="inputFeet" type="number" placeholder="Feet" oninput="LengthConverter(this.value)" onchange="LengthConverter(this.value)">
+</p>
+<p>Meters: <span id="outputMeters"></span></p>
+
+<script>
+function LengthConverter(valNum) {
+  document.getElementById("outputMeters").innerHTML=valNum/3.2808;
+}
+</script>
+</body>
+
