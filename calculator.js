@@ -1,4 +1,4 @@
-//666, 420, 1999
+
 
 var globalAnswer = "0" //declaring global variable here... this is bad practice
 
@@ -180,16 +180,16 @@ function createNewNumber(string) {
 function changeBackground() {
   var currentValue = document.getElementById("currentValue").innerHTML
   console.log('changeBackground. currentValue is: ', currentValue)
-  if (currentValue === "420") {
-    console.log('holy shit!!!!!!!! currentValue is 420 bro!')
-    $(document.body).addClass('background-420');
+  {
+    console.log
+    $(document.body)
   }
   if (currentValue != "420") {
     $(document.body).removeClass('background-420');
   }
     if (currentValue === "666") {
     console.log('666 666 666 666 666 666')
-    $(document.body).addClass('background-666');
+    $(document.body));
   }
   if (currentValue != "666") {
     $(document.body).removeClass('background-666');
