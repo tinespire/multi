@@ -3,10 +3,12 @@
 
 </div>
 <script>
-  var tallies = 0;
-  function tally() {
-    tallies++
-    document.querySelector("#tallies").innerText = "Tallies: " + tallies;
+  function counter() {
+    var i = document.getElementsByTagName("span").length
+    document.getElementById('tallies').innerHTML += "<span onclick='tally(" + i + ")'>0</span>"
+  }
+  function tally(i) {
+    document.getElementsByTagName("span")[i].innerText = Number(document.getElementsByTagName("span")[i].innerText) + 1;
   }
 </script>
-<button class='btn btn-primary' onclick='tally()'>+</button>
+<button class='btn btn-primary' onclick='counter()'>+</button>
