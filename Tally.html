@@ -5,10 +5,12 @@
 <script>
   function counter() {
     var i = document.getElementsByTagName("h1").length
-    document.getElementById('tallies').innerHTML += "<div class='jumbotron' style='padding-left: 10px;' onclick='tally(" + i + ")'><h1>0</h1></div>"
+    document.getElementById('tallies').innerHTML += "<div class='jumbotron' style='padding-left: 10px; text-align: center;' onclick='tally(" + i + ")'><h1>0</h1></div>"
   }
   function tally(i) {
     document.getElementsByTagName("h1")[i].innerText = Number(document.getElementsByTagName("h1")[i].innerText) + 1;
   }
 </script>
+<center>
 <button class='btn btn-primary' onclick='counter()'>+</button>
+</center>
