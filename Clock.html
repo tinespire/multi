@@ -2,7 +2,7 @@
 <h1 id='clock'></h1>
 <script>
   setInterval(function() {
-  var date = new Date.toLocaleTimeString()
+  var date = new Date().toLocaleTimeString()
   document.getElementById('clock').innerText = date;
   }, 0)
 </script>
