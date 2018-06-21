@@ -1,4 +1,5 @@
-  <FORM NAME="Calc">
+<link rel='stylesheet' href='https://bootswatch.com/3/paper/bootstrap.min.css'> 
+<FORM NAME="Calc">
 <TABLE BORDER=4>
 <TR>
 <TD>
@@ -8,25 +9,25 @@
 </TR>
 <TR>
 <TD>
-<INPUT TYPE="button" NAME="one"   VALUE="  1  " OnClick="Calc.Input.value += '1'">
-<INPUT TYPE="button" NAME="two"   VALUE="  2  " OnCLick="Calc.Input.value += '2'">
-<INPUT TYPE="button" NAME="three" VALUE="  3  " OnClick="Calc.Input.value += '3'">
-<INPUT TYPE="button" NAME="plus"  VALUE="  +  " OnClick="Calc.Input.value += ' + '">
+<INPUT class='btn btn-primary' TYPE="button" NAME="one"   VALUE="  1  " OnClick="Calc.Input.value += '1'">
+<INPUT class='btn btn-primary' TYPE="button" NAME="two"   VALUE="  2  " OnCLick="Calc.Input.value += '2'">
+<INPUT class='btn btn-primary' TYPE="button" NAME="three" VALUE="  3  " OnClick="Calc.Input.value += '3'">
+<INPUT class='btn btn-primary' TYPE="button" NAME="plus"  VALUE="  +  " OnClick="Calc.Input.value += ' + '">
 <br>
-<INPUT TYPE="button" NAME="four"  VALUE="  4  " OnClick="Calc.Input.value += '4'">
-<INPUT TYPE="button" NAME="five"  VALUE="  5  " OnCLick="Calc.Input.value += '5'">
-<INPUT TYPE="button" NAME="six"   VALUE="  6  " OnClick="Calc.Input.value += '6'">
-<INPUT TYPE="button" NAME="minus" VALUE="  -  " OnClick="Calc.Input.value += ' - '">
+<INPUT class='btn btn-primary' TYPE="button" NAME="four"  VALUE="  4  " OnClick="Calc.Input.value += '4'">
+<INPUT class='btn btn-primary' TYPE="button" NAME="five"  VALUE="  5  " OnCLick="Calc.Input.value += '5'">
+<INPUT class='btn btn-primary' TYPE="button" NAME="six"   VALUE="  6  " OnClick="Calc.Input.value += '6'">
+<INPUT class='btn btn-primary' TYPE="button" NAME="minus" VALUE="  -  " OnClick="Calc.Input.value += ' - '">
 <br>
-<INPUT TYPE="button" NAME="seven" VALUE="  7  " OnClick="Calc.Input.value += '7'">
-<INPUT TYPE="button" NAME="eight" VALUE="  8  " OnCLick="Calc.Input.value += '8'">
-<INPUT TYPE="button" NAME="nine"  VALUE="  9  " OnClick="Calc.Input.value += '9'">
-<INPUT TYPE="button" NAME="times" VALUE="  x  " OnClick="Calc.Input.value += ' * '">
+<INPUT class='btn btn-primary' TYPE="button" NAME="seven" VALUE="  7  " OnClick="Calc.Input.value += '7'">
+<INPUT class='btn btn-primary' TYPE="button" NAME="eight" VALUE="  8  " OnCLick="Calc.Input.value += '8'">
+<INPUT class='btn btn-primary' TYPE="button" NAME="nine"  VALUE="  9  " OnClick="Calc.Input.value += '9'">
+<INPUT class='btn btn-primary' TYPE="button" NAME="times" VALUE="  x  " OnClick="Calc.Input.value += ' * '">
 <br>
-<INPUT TYPE="button" NAME="clear" VALUE="  c  " OnClick="Calc.Input.value = ''">
-<INPUT TYPE="button" NAME="zero"  VALUE="  0  " OnClick="Calc.Input.value += '0'">
-<INPUT TYPE="button" NAME="DoIt"  VALUE="  =  " OnClick="Calc.Input.value = eval(Calc.Input.value)">
-<INPUT TYPE="button" NAME="div"   VALUE="  /  " OnClick="Calc.Input.value += ' / '">
+<INPUT class='btn btn-primary' TYPE="button" NAME="clear" VALUE="  c  " OnClick="Calc.Input.value = ''">
+<INPUT class='btn btn-primary' TYPE="button" NAME="zero"  VALUE="  0  " OnClick="Calc.Input.value += '0'">
+<INPUT class='btn btn-primary' TYPE="button" NAME="DoIt"  VALUE="  =  " OnClick="Calc.Input.value = eval(Calc.Input.value)">
+<INPUT class='btn btn-primary'TYPE="button" NAME="div"   VALUE="  /  " OnClick="Calc.Input.value += ' / '">
 <br>
 </TD>
 </TR>
@@ -117,14 +118,14 @@ document.convert.mi.value = m / miValue
 </select>
  </td>
  <td>
-<input type="text" name="InUnit" size="20" maxlength="20" value="0">
+<input type="text" class='form-control' name="InUnit" size="20" maxlength="20" value="0">
  </td>
  </tr>
  <tr>
  <td>
 Centimetre:   </td>
  <td>
-<input type="text" name="cm" size="20" maxlength="20" value="0" onFocus="nofocus()">
+<input type="text" name="cm" class='form-control' size="20" maxlength="20" value="0" onFocus="nofocus()">
  </td>
  </tr>
  <tr>
@@ -132,41 +133,41 @@ Centimetre:   </td>
 Metre:
 </td>
 <td>
-<input type="text" name="m" size="20" maxlength="20" value="0" onFocus="nofocus()">
+<input type="text" name="m" class='form-control' size="20" maxlength="20" value="0" onFocus="nofocus()">
 </td>
 </tr>
 <tr>
 <td>
 Kilometre:   </td>
 <td>
-<input type="text" name="km" size="20" maxlength="20" value="0" onFocus="nofocus()">
+<input type="text" name="km" class='form-control' size="20" maxlength="20" value="0" onFocus="nofocus()">
 </td>
 </tr>
 <tr>
 <td>
 Inch:   </td>
 <td>
-<input type="text" name="inch" size="20" maxlength="20" value="0" onFocus="nofocus()">
+<input type="text" name="inch" class='form-control'  size="20" maxlength="20" value="0" onFocus="nofocus()">
 </td>
 </tr>
 <tr>
 <td>
 Foot:   </td>
 <td>
-<input type="text" name="ft" size="20" maxlength="20" value="0" onFocus="nofocus()">  </td>
+<input type="text" name="ft" class='form-control' size="20" maxlength="20" value="0" onFocus="nofocus()">  </td>
 </tr>
 <tr>
 <td>
 Yard:   </td>
 <td>
-<input type="text" name="yd" size="20" maxlength="20" value="0" onFocus="nofocus()">
+<input type="text" name="yd" class='form-control' size="20" maxlength="20" value="0" onFocus="nofocus()">
 </td>
 </tr>
 <tr>
 <td>
 Mile:   </td>
 <td>
-<input type="text" name="mi" size="20" maxlength="20" value="0" onFocus="nofocus()">
+<input type="text" name="mi" class='form-control' size="20" maxlength="20" value="0" onFocus="nofocus()">
 </td>
 </tr>
 <tr>
@@ -174,7 +175,7 @@ Mile:   </td>
 <input type="Reset" value="Start Over">
 </td>
 <td align="center">
-<input type="button" value="Convert" onClick="toCM()">
+<input class='btn btn-primary' type="button" value="Convert" onClick="toCM()">
 </td>
 </tr>
 </table>
