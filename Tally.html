@@ -5,7 +5,7 @@
 <script>
   function counter() {
     var i = document.getElementsByTagName("span").length
-    document.getElementById('tallies').innerHTML += "<span onclick='tally(" + i + ")'>0</span>"
+    document.getElementById('tallies').innerHTML += "<span class='jumbotron' onclick='tally(" + i + ")'>0</span>"
   }
   function tally(i) {
     document.getElementsByTagName("span")[i].innerText = Number(document.getElementsByTagName("span")[i].innerText) + 1;
