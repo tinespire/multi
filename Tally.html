@@ -5,7 +5,7 @@
 <script>
   function counter() {
     var i = document.getElementsByTagName("h1").length
-    document.getElementById('tallies').innerHTML += "<div class='jumbotron' style='text-align: center;' onmouseover='style = `text-align: center; cursor: hand;`' onclick='tally(" + i + ")'><h1>0</h1></div>"
+    document.getElementById('tallies').innerHTML += "<div class='jumbotron' style='text-align: center; user-select: none;' onmouseover='style = `user-select: none; text-align: center; cursor: hand;`' onclick='tally(" + i + ")'><h1>0</h1></div>"
   }
   function tally(i) {
     document.getElementsByTagName("h1")[i].innerText = Number(document.getElementsByTagName("h1")[i].innerText) + 1;
