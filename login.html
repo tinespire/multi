@@ -4,6 +4,13 @@
 <script>
 function onSignIn(googleUser) {
   var profile = googleUser.getBasicProfile();
-  alert("You are logged in as: " + profile.getName());
+  localStorage.userName = profile.getName();
 }
+
+function chatWith(who) {
+  who = who + localStorage.userName;
+  window.location.href = 'multichat.html?chatusers=' + (who.split("").sort().join(""));
+}
+  
 </script>
+<input onchange='chatWith(this.value)' placeholder='Chat With'>
