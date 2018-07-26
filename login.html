@@ -1,10 +1,13 @@
 <script src="https://apis.google.com/js/platform.js" async defer></script>
 <meta name="google-signin-client_id" content="834140369-fih57at9k775lkc74ntivo0vpfdn5ndm.apps.googleusercontent.com">
+<link rel='stylesheet' href='https://bootswatch.com/3/paper/bootstrap.min.css'>
+<center>
 <div class="g-signin2" data-onsuccess="onSignIn"></div>
 <script>
 function onSignIn(googleUser) {
   var profile = googleUser.getBasicProfile();
   localStorage.userName = profile.getName();
+  document.getElementById('chat-input').style.display = 'block';
 }
 
 function chatWith(who) {
@@ -13,4 +16,6 @@ function chatWith(who) {
 }
   
 </script>
-<input onchange='chatWith(this.value)' placeholder='Chat With'>
+<br>
+<input id='chat-input' style='display: none;' onchange='chatWith(this.value)' placeholder='Chat With'>
+</center>
