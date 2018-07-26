@@ -1,0 +1,9 @@
+<script src="https://apis.google.com/js/platform.js" async defer></script>
+<meta name="google-signin-client_id" content="834140369-fih57at9k775lkc74ntivo0vpfdn5ndm.apps.googleusercontent.com">
+<div class="g-signin2" data-onsuccess="onSignIn"></div>
+<script>
+function onSignIn(googleUser) {
+  var profile = googleUser.getBasicProfile();
+  alert("You are logged in as: " + profile.getName());
+}
+</script>
