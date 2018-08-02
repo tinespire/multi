@@ -14,3 +14,34 @@
   <a href="https://tinspirecx.github.io/multi/Tally.html"><button class="btn btn-primary">Tally Counter</button></a>
   <a href="https://tinspirecx.github.io/multi/Clock.html"><button class="btn btn-primary">Clock</button></a>
 </center>
+<p>ShareThis</p>
+<style>
+  .st-custom-button[data-network] {
+   background-color: #9EEC46;
+   display: inline-block;
+   padding: 5px 10px;
+   cursor: pointer;
+   font-weight: bold;
+   color: #fff;
+   }
+}
+</style>
+<script>
+  (function(document) {
+   var shareButtons = document.querySelectorAll(".st-custom-button[data-network]");
+   for(var i = 0; i < shareButtons.length; i++) {
+      var shareButton = shareButtons[i];
+      
+      shareButton.addEventListener("click", function(e) {
+         var elm = e.target;
+         var network = elm.dataset.network;
+         
+         console.log("share click: " + network);
+      });
+   }
+})(document);
+</script>
+<div data-network="twitter" class="st-custom-button">Twitter</div>
+<div data-network="facebook" class="st-custom-button">Facebook</div> 
+<div data-network="linkedin" class="st-custom-button">LinkedIn</div> 
+<div data-network="email" class="st-custom-button">Email</div> 
