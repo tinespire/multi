@@ -6,12 +6,12 @@
 <script>
 function onSignIn(googleUser) {
   var profile = googleUser.getBasicProfile();
-  localStorage.userName = profile.getName();
+  localStorage.currentUserName = profile.getName();
   document.getElementById('chat-input').style.display = 'block';
 }
 
 function chatWith(who) {
-  who = who + localStorage.userName;
+  who = who + localStorage.currentUserName;
   window.location.href = 'multichat.html?chatusers=' + (who.split("").sort().join(""));
 }
   
